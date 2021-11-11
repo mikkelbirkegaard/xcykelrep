@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300&display=swap');
+/*font-family: 'Montserrat', Light italic, Regular, Medium;*/
+
+/*Nedenstående bliver brugt til at holde sammen på CSSen for dokumentet*/ 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }  
+
+  
+:root {
+  --lightorange: #e06437 /*ikoner, FB, insta, kurv osv. */ 
+  --yellow: #fea808  /*former*/ 
+  --rdorange: #f15a24 /*knapperne - book tid osv. og burgerbar stregfarve*/ 
+  --white: #ffffff
+  --black: #000000
+}
+body{
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    background-color: whitesmoke;
+    height: 150px;
+}
+.haha{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/*Styling af burgermenu*/
+#menuToggle
+{
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+}
+
+/*Burger streger style start*/
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #f15a24;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+}
+
+/*ændrer krydset i burgerbaren*/
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* Burgerbar kryds streg til går til venstre*/
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #000000;
+ }
+
+/* Ekstra streg i kryds usynlig*/
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+ }
+
+/*Burgerbar kryds streg til går til højre*/
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Ændrer selve dropdown items*/
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  font-family:'montserrat', sans-serif;
+  background: #e06437;
+  list-style-type: none;
+  
+  /* Gør så det hele virker i både safari og chroome */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+/*Skriftstørrelse og mellemrum i menubar*/
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*menubar slider ind fra venstre*/
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+ 
+.submenu {
+  display: none;
+}
+
+nav ul ul ul li:hover {
+  display: block;
+}
+
+
+
+
+
+
+
+/*Styling af footer*/
+footer {
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    background-image: url(images/backgroundfooter.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.someikoner{
+    margin-top: 6%;
+}
+.ikon{
+    width: 18%;
+    height: auto;
+    margin-right: 3%;
+}
+.ikon2{
+    width: 13%;
+    height: auto;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+}
+.lokation{
+    width: 5%;
+    height: auto;
+    margin-top: 4%;
+}
+.telefonbillede{
+    width: 5%;
+    height: auto;
+    margin-top: 4%;
+}
+.ur{
+    width: 7%;
+    height: auto;
+    margin-top: 4%;
+}
+.mobilepay{
+    width: 8%;
+    height: auto;
+    margin-top: 4%;
+}
+.betalingsmetode {
+  margin-bottom: 6%;
+}
