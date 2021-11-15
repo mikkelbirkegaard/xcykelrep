@@ -10,150 +10,370 @@
 body{
   margin: 0;
   padding: 0;
-  height: 100vh;
   background-color: white;
   display: flex;
   flex-direction: column;
   font-family: 'montserrat';
+
 }
 
-/*HEADER START */
-  /*Logo */
-  #headlogo{
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -11%
-  }
-  
-  /*kurv og find op os ikon */
-  .headimages{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 4%;
-  }
-  
-  #basket{
-    width: 5.9%;
-    display: block;
-    margin-left: 2%
-  }
-  
-  #findus{
-    width: 5%;
-    height: 4%;
-    display: block;
-  }
-  
-  /*navbar*/
-  .nav{
-    margin-top: -22%;
-    text-align:left;
-    line-height:70px;
-  }
-  
-  /*Selve dropdown punkterne*/
-  .menu a{
-    text-decoration: none;
-    color: #000000;
-    line-height: 70px;
-  }
-  
-  /*Book tid knap*/
-  span{
-    background-color: #f15a24;
-  }
-  
-  /*Selve burgeren*/
-  label{
-    color: #e06437;
-    font-size: 60px;
-    line-height: 70px;
-    display: none;
-    width: 10%
-    }
-  
-  /*Checkboks - klik på burger for at vise dropdown items*/
-  #toggle{
-    display: none;
-  }
-  
-  /*Burgerens punkter, find os, sæson osv.*/
-  .submenu { display: none;
-    font-size: 12px;
-  }
-  .menuitem>li:hover>.submenu { display: block;list-style-type: none;}
-  
-  .menuitem{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    margin-top: 10%;
-    font-size: 16px;
-  }
-  
-  
-  /*Media rules for Iphone og stående ipad*/
-  @media only screen and (max-width: 769px) {
-    
-    label{
-      display: block;
-      cursor: pointer;
-    }
-  
-    span{
-      display: none;
-    }
-  
-    .menu{
-      text-align: center;
-      width: 100%;
-      display: none;
-    }
-  
-    .menu a{
-      display: block;
-      border-bottom: 1px solid #EAEAEB;
-      margin: 0;
-    }
-  
-    .menuitem{
-      flex-direction: column;
-    }
-  
-    #toggle:checked + .menu{
-      display: block;
-    }
-  }
-  
-  /*Media rules for liggende ipad og web*/
-  @media only screen and (min-width: 770px) {
-    .menuitem{
-      display: flex;
-      justify-content: left;
-      margin-left: 15%;
-      gap: 10%;
-      list-style-type: none;
-      margin-top: 1%;
-      font-size: 16px;
-    }
-  
-    #findus{
-      width: 5%;
-      height: 4%;
-      display: none;
-    }
-  
-    }
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0px 2%;
+  background-color: white;
+  box-shadow: 0px 20px 40px;
+  position: relative;
+  z-index: 10;
+}
 
-/*HEADER SLUT */
+.logo{
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+.navlist{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 
-.bgmain{
-    background-color: hotpink;
+}
+
+.navlist li{
+  display: inline-block;
+  padding:  0px 20px;
+}
+
+.navlist li a{
+  transition: 0.1s;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+.navlist li a:hover{
+  color: #f4a83c;
+}
+
+.buttom{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 9px 25px;
+  background-color: #F15A24;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+
+}
+
+.buttom:hover{
+  color: #AB5F18;
+}
+
+.sidelist{
+  text-decoration: none;
+}
+
+.sidelist li{
+  display: inline-block;
+  padding:  0px 10px;
+}
+.sidelist li a{
+  transition: all 0,4s ease 0s;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+.sidelist li a:hover{
+  color: #f4a83c;
+}
+.kurv{
+  width: 30px;
+}
+.findos{
+  width: 20px
+}
+.burger{
+  text-decoration: none;
+}
+.burg{
+  text-decoration: none;
+  list-style: none;
+  color: #F15A24;
+  font-size: 60px;
+}
+
+
+@media only screen and (max-width: 769px){
+  nav{
+    display: none;
+  }
+  .billedertilmain{
     height: 100vh;
+  }
+  .rasmus{
+    position: absolute;
+    top: 210px;
+    left: -30px;
+    width: 55%;
+    max-width: 400px;
+  }
+  .rasmusbaggrund{
+    position: absolute;
+    top: 180px;
+    left: 0;
+    width: 70%;
+  }
+  .nyny{
+    display: none;
+  }
+
+  .sidelist{
+    display: none;
+  }
+  header{
+    justify-content: space-between;
+  }
+  footer::before{
+    background: url("images/sidstegang.svg") center bottom no-repeat;
+    bottom: 100%;
+    content: '';
+    height: 300px;
+    position: absolute;
     width: 100%;
 }
+.rasmusbaggrundhvid{
+  position: absolute;
+  top: 180px;
+  left: 70px;
+  width: 100%;
+}
+
+.pp{
+  position: absolute;
+  top: 270px;
+  left: 170px;
+  font-size: 20px;
+  font-weight: 400;
+
+}
+.kk{
+  position: absolute;
+  top: 300px;
+  left: 170px;
+  font-size: 20px;
+  font-weight: 200;
+  width: 15ch;
+  text-align: center;
+}
+
+
+}
+ @media only screen and (min-width: 770px) {
+   .burger{
+     display: none;
+   }
+   .findos{
+     display: none;
+   }
+
+   footer::before{
+    background: url("images/footer.svg") center bottom no-repeat;
+    bottom: 100%;
+    content: '';
+    height: 100px;
+    position: absolute;
+    width: 100%;
+}
+.rasmus{
+  position: absolute;
+  top: 600px;
+  left: -30px;
+  width: 200px;
+  max-width: 400px;
+}
+.rasmusbaggrund{
+  position: absolute;
+  top: 600px;
+  left: 0;
+  width: 300px;
+}
+.rasmusbaggrundhvid{
+  position: absolute;
+  top: 600px;
+  left: 70px;
+  width: 400px;
+}
+
+.kunderne{
+  display: none;
+}
+
+    
+
+   
+
+ }
+ @media only screen and (min-width: 666px) {
+
+   .billedertilmain{
+     height: 150vh;
+   }
+   .pp{
+    position: absolute;
+    top: 270px;
+    left: 350px;
+    font-size: 20px;
+    font-weight: 400;
+ 
+  }
+  .kk{
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    font-size: 20px;
+    font-weight: 200;
+    width: 15ch;
+    text-align: center;
+  }
+
+
+ }
+ @media only screen and (min-width: 770px){
+  .pp{
+    position: absolute;
+    top: 700px;
+    left: 170px;
+    font-size: 20px;
+    font-weight: 400;
+  
+  }
+  .kk{
+    position: absolute;
+    top: 750px;
+    left: 170px;
+    font-size: 20px;
+    font-weight: 200;
+    width: 15ch;
+    text-align: center;
+  }
+  .læsmere{
+    position: absolute;
+    top: 1050px;
+    left: 300px;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+  }
+
+ }
+
+
+.billedertilmain{
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+
+  .wrapper{
+       min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 80px; /* height of your footer */
+}
+
+  .pp1{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .pilvenstre{
+      width: 100%;
+      width: 5%;
+      height: 5%;
+      justify-content: center;
+      padding-left: 10px;
+  }
+  .pilh{
+    width: 100%;
+    width: 5%;
+    height: 5%;
+    justify-content: center;
+    padding-right: 10px;
+}
+.parent1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50%;
+}
+
+.rew{
+    width: 50%;
+}
+.pp1h{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 60px;
+
+}
+.rew1{
+  padding-top: 100px;
+  width: 250px;
+}
+.rew2{
+  width: 250px;
+  padding-top: 50px;
+}
+.rew3{
+  width: 250px;
+  padding-top: 50px;
+}
+
+.parent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+.kunderne{
+    position: relative;
+    background-color: white;
+}
+.læsmere{
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #FEA808;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .row{
   display: flex;
@@ -165,36 +385,36 @@ ul{
 }
 
 footer{
-  position: relative;
+  position: absolute;
   margin-top: auto;
   background-color: #FEA808;
   margin-top: auto;
   width: 100%;
-}
 
-footer::before{
-    background: url("images/sidstegang.svg") center bottom no-repeat;
-    bottom: 100%;
-    content: '';
-    height: 103px;
-    position: absolute;
-    width: 100%;
 }
-
 .rowsome{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+
+  }
+
+
 
 .fb{
-    width: 90px;
+    width: 50px;
     margin-right: 10px;
 }
 
 .ig{
-    width: 80px;
+    width: 40px;
     margin-left: 10px;
 }
 
@@ -206,7 +426,7 @@ footer::before{
 }
 
 .ur{
-    width: 40px;
+    width: 20px;
     margin: auto;
     padding-top: 30px;
 }
@@ -217,7 +437,7 @@ footer::before{
 }
 
 .lokation{
-    width: 40px;
+    width: 20px;
     padding-top: 30px;
 }
 
@@ -226,7 +446,7 @@ footer::before{
 }
 
 .phone{
-    width: 40px;
+    width: 20px;
     padding-top: 30px;
 }
 
@@ -235,7 +455,7 @@ footer::before{
 }
 
 .mp{
-    width: 40px;
+    width: 20px;
     padding-top: 30px;
 }
 
@@ -262,4 +482,3 @@ footer::before{
     width: 100%;
     height: 500px;
 }
-
