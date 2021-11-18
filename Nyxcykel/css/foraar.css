@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: white;
+  font-family: 'montserrat';
+}
+
+main{
+  height: 130vh;
+}
+
+p {
+  font-family: montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.foraar{
+  text-align: center;
+}
+
+.text{
+  margin-left: 10px;
+}
+
+.cykel{
+  margin-left: 10px;
+}
+
+.textweb{
+  font-size: 20px;
+}
+
+
+/* Book tid knap på telefon*/
+.booktidknap {
+  position: fixed;
+  background: #F15A24;
+  width: 90%;
+  left: 5%;
+  height: 45px;
+  line-height: 45px;
+  bottom: 10%;
+  text-align: center;
+  box-shadow: 4px 4px 4px #D6D6D6;
+  cursor: pointer;
+  border-radius: 50px;
+  z-index: 10;
+  text-transform: uppercase;
+  font-family: montserrat, sans-serif;
+  font-weight: 900;
+  color: var(--black);
+  text-decoration: none;
+}
+.booktidknap2 {
+  text-decoration: none;
+  font-family: montserrat, sans-serif;
+  font-weight: 200;
+  color: var(--black);
+}
+
+.booktidknap:active {
+box-shadow: 0 0;
+}
+
+/*Footer start*/
+.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul{
+  list-style: none;
+}
+
+footer{
+  position: relative;
+  margin-top: auto;
+  background-color: #FEA808;
+  margin-top: auto;
+  width: 100%;
+}
+
+.rowsome{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.bundfoot{
+  margin-bottom: 200px;
+}
+
+.fb{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.ig{
+    width: 40px;
+    margin-left: 10px;
+}
+
+
+
+.ur{
+    width: 20px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.row1{
+    margin: auto;
+    text-align: center;
+}
+
+.lokation{
+    width: 20px;
+    padding-top: 30px;
+}
+
+.loka{
+    margin: auto;
+}
+
+.phone{
+    width: 20px;
+    padding-top: 30px;
+}
+
+.pho{
+    margin: auto;
+}
+
+.mp{
+    width: 20px;
+    padding-top: 30px;
+}
+
+.mobilepay{
+    margin: auto;
+}
+
+.row2{
+    text-align: center;
+    margin: auto;
+}
+
+.row3{
+    text-align: center;
+    margin: auto;
+}
+
+.row4{
+    text-align: center;
+    margin: auto;
+}
+
+.pp{
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
+
+.row12{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  align-items: baseline;
+}
+
+.fb1{
+  width: 50px;
+  margin-right: 10px;
+}
+
+.ig1{
+  width: 40px;
+  margin-left: 10px;
+}
+
+
+
+.ur1{
+  width: 30px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+}
+
+.some12{
+  margin: auto;
+  text-align: center;
+}
+.row5{
+  margin: auto;
+  text-align: center;
+}
+
+.lokation1{
+  width: 23px;
+  padding-top: 20px;
+}
+
+
+
+.phone1{
+  width: 30px;
+}
+
+
+.mp1{
+  width: 30px;
+}
+
+.mobilepay1{
+  margin: auto;
+}
+
+.row6{
+  text-align: center;
+  margin: auto;
+}
+
+.row7{
+  text-align: center;
+  margin: auto;
+}
+
+.row8{
+  text-align: center;
+  margin: auto;
+}
+/*Footer slut*/
+
+/*Media rules for Iphone og stående ipad*/
+@media only screen and (max-width: 769px) {
+
+  .textweb{
+    display: none;
+  }
+
+  .textmobil{
+    margin-top: 30px;
+  }
+
+  .formorange{
+    position:absolute;
+    top: 150px;
+    z-index: -1;
+    margin-left: -60px;
+  }
+
+  .cykel{
+    margin-top: 50px;
+  }
+
+  .formorange2{
+    position:absolute;
+    z-index: -1;
+    margin-left: 50%;
+    margin-top: -40%;
+  }
+
+  .orangehjul{
+    display: none;
+  }
+
+  footer::before{
+    background: url("../images/sidstegang.svg") center bottom no-repeat;
+    bottom: 100%;
+    content: '';
+    height: 300px;
+    position: absolute;
+    width: 100%;
+  }
+
+    .row12{
+      display: none!important;
+    }
+
+}
+
+
+/*Media rules for liggende ipad og web*/
+@media only screen and (min-width: 770px) {
+
+  .booktidknap {
+    display: none;
+  }
+
+  .textmobil{
+    display: none;
+  }
+
+  .boxforaar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cykel{
+  margin-right: 100px;
+  margin-left: 50px;
+  }
+
+  .textweb{
+  margin-right: 100px;
+  }
+
+  .pirceestimate{
+    margin-left: 545px;
+    margin-top: 20px;
+  }
+
+  .formorange{
+    display: none;
+  }
+
+  .formorange2{
+    display: none;
+  }
+
+  .orangehjul{
+    position:absolute;
+    z-index: -1;
+    margin-left: 80%;
+  }
+
+  footer::before{
+    background: url("../images/footer.svg") center bottom no-repeat;
+    bottom: 100%;
+    content: '';
+    height: 200px;
+    position: absolute;
+    width: 100%;
+  }
+
+    .row{
+      display: none!important;
+    }
+    .rowsome{
+      display: none!important;
+    }
+
+}
+
+
+@media only screen and (min-width: 1025px){
+.row1{
+  margin-bottom: 30px;
+}
+
+}

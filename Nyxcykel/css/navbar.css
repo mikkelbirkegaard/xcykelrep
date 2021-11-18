@@ -1,0 +1,174 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: 'montserrat';
+}
+
+.nav{
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+
+
+.menu{
+  margin: 0 30px 0 0;
+  background-color: white;
+}
+
+.menu a {
+  clear: left;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 10px;
+  line-height: 70px;
+}
+.sason{
+  clear: left;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 10px;
+  line-height: 70px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+span{
+  background-color: #f15a24;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.togtog{
+  color: #e06437;
+  font-size: 50px;
+  line-height: 70px;
+  width: 26px;
+  display: none;
+}
+
+#toggle{
+  display: none;
+}
+
+.logo{
+  width: 100px;
+  cursor: pointer;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+  align-items: center;
+  box-shadow: 0px 20px 40px;
+  color: #D6D6D6;
+}
+
+
+.menuitem li a {
+  padding: 0 10px;
+}
+
+.menudrop{
+  list-style: none;
+}
+
+.submenu{
+  list-style: none;
+  display: none;
+  font-size: 12px;
+}
+
+/*Burgerens punkter, find os, sæson osv.*/
+.submenu { display: none;
+  font-size: 12px;
+}
+.menuitem>li:hover>.submenu { display: block;list-style-type: none;}
+
+.menuitem{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.knap:hover {
+  background-color: #FEA808;
+  transition: all 1s ease;
+}
+
+
+/*Media rules for Iphone og stående ipad*/
+@media only screen and (max-width: 769px) {
+
+  .togtog{
+   display: block;
+    cursor: pointer;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    flex-direction: row-reverse
+  }
+
+  .menu{
+    text-align: center;
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+  }
+
+  .menuitem{
+    flex-direction: column;
+  }
+
+  .menu a{
+    display: block;
+    border-bottom: 1px solid #CECCCC;
+    margin: 0;
+  }
+
+  #toggle:checked + .menu{
+    display: block;
+  }
+
+  span{
+    display: none;
+  }
+
+  .flex-item:nth-of-type(1) { order: 1; }
+
+  /*lappeløsning til header - rækkefølge*/
+  .headimages{
+    position: relative;
+    left: 50%;
+  }
+
+  .logo{
+    position: relative;
+    right: 130%;
+  }
+
+}
+
+
+
+/*Media rules for liggende ipad og web*/
+@media only screen and (min-width: 770px) {
+
+  .findus{
+    display: none !important;
+  }
+  
+}

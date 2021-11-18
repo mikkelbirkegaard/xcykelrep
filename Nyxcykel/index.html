@@ -4,38 +4,60 @@
 <meta charset="utf-8">
 <title>X Cykel Rep</title>
 <meta name="author" content="Mikkel">
-<meta name="description" content="Spis på SU er et madmagasin, hvor du vil finde nemme opskrifter, som er hurtige at lave i hverdagen. Derudover vil du finde inspirerende artikler som giver gode råd omkring bla. Økonomi og madspild.">
+<meta name="description" content="På denne side kan du finde information om reparation af din cykel. Vi laver både serviceeftersyn, udfører billige reparationer af både fejl på kæde, hjul og meget mere.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keyword" content="nemme opskrifter, step-by-step, artikler om økonomi på su, artikler om madspild, Opskrift på carbonara, studernede">
-<link rel="stylesheet" href="style.css">
+<meta name="keyword" content="Reparation, cykel, serviceeftersyn, billigt, kæde, hjul, cykelkæde, dæk">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
 <link rel="icon" type="image/x-icon" href="images/logo.png">
 </head>
 <body>
 <div id="wrap">
 <header>
-  <div class="burger">
 
-  <a class="burg" href="#">☰</a>
+  <a href="index.html"><img src="imagesnavbar/logo.png" alt="logo" class="logo flex-item"></a>
+
+
+  <div class="nav flex-item">
+    <label for="toggle" class="togtog">&#9776;</label>
+    <input type="checkbox" id="toggle">
+
+
+
+    <div class="menu">
+      <ul class="menuitem">
+        <li>
+          <a href="findos.html">FIND OS</a>
+          <li>
+            <a href="priser.html">PRISER</a>
+          </li>
+          <li>
+            <a href="omos.html">OM OS</a>
+            <ul class="submenu">
+              <li><a href="404.html">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <p class="sason">SÆSON</p>
+            <ul class="submenu">
+              <li><a href="foraar.html">FORÅR</a></li>
+              <li><a href="efteraar.html">EFTERÅR</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="404.html">SHOP</a>
+          </li>
+          <li>
+            <a href="404.html"><span class="knap">BOOK TID</span></a>
+          </li>
+        </ul>
     </div>
+  </div>
 
-  <a href="index.html">
-    <img class="logo" src="images/logo.png" alt="logo">
-   </a>
-   <nav>
-     <ul class="navlist">
-       <li><a href="#">FIND OS</a></li>
-       <li><a href="#">PRISER</a></li>
-       <li><a href="#">OM OS</a></li>
-       <li><a href="#">SÆSON</a></li>
-       <li><a href="#">SHOP</a></li>
-     </ul>
-  </nav>
-  <ul class="sidelist">
-   <li><a class="buttom" href="sidenerunderombygning.html">BOOK TID</a></li>
-  </ul>
-  <div class="kurvebillede">
-    <img class="kurv" src="images/kurv.png" alt="">
-    <img class="findos" src="images/findos.png" alt="">
+
+  <div class="headimages">
+    <a href="findos.html"><img class="findus" src="imagesnavbar/findos.png" alt="findus"></a>
+    <a href="404.html"><img class="basket" src="imagesnavbar/kurv.png" alt="basket"></a>
   </div>
 
 </header>
@@ -49,15 +71,17 @@
           </video>
          <img class="rasmusbaggrund" src="images/baggrundralle.png" alt="gul baggrund">
          <img class="rasmusbaggrundhvid" src="images/hvid.png" alt="hvid baggrund">
-         <div class="tesktpåforside">
-             <h2 class="pp">Mit navn er Rasmus.</h2>
-             <p class="kk">
-                Jeg startede mit cykelværksted for 4,5 år siden.
 
-                Her får man en ekstraordinær service ud over det sædvanlige. Det er vigtigt for mig at man føler sig velkommen og får en god rådgivning. 
+         <div class="tesktpåforside">
+             <h2 class="pp">Velkommen til!</h2>
+             <p class="kk">
+              Mit navn er Rasmus. Jeg startede X Cykel Rep for 4,5 år siden.
+
+                Hos os får du en ekstraordinær service ud over det sædvanlige. Det er vigtigt for mig, at du føler dig velkommen og får en god og personlig rådgivning. <br><br>Vi ses!
 
               </p>
-              <a class="læsmere" href="#">Læs mere</a>
+              <a class="læsmere" href="omos.html">LÆS MERE</a>
+              <a class="læsmere1" href="omos.html">LÆS MERE</a>
                
          </div>
          <img class="rasmus" src="images/rasmusforside.png" alt="rasmus">
@@ -67,9 +91,9 @@
 
               <figure class="parent1">
                 <h2 class="pp1h">Det siger vores kunder</h2>
-              <img class="rew1" src="images/kunder.png" alt="andmeldelser">
-              <img class="rew2" src="images/kunder.png" alt="andmeldelser">
-              <img class="rew3" src="images/kunder.png" alt="andmeldelser">
+              <img class="rew1" src="images/firstrew.png" alt="andmeldelser">
+              <img class="rew2" src="images/2rew.png" alt="andmeldelser">
+              <img class="rew3" src="images/3rew.png" alt="andmeldelser">
              </figure>
              </div>
          
@@ -83,53 +107,151 @@
          <img class="pilvenstre" src="images/pil.png" alt="pil">
         </figure>
      </div>
+
+
+      <article class="treartikler">
+
+        <a href="omos.html"><section class="førsteartikel">
+          <figure>
+            <img class="artikel1" src="images/billede2@100x.jpg" alt="artikler">
+          </figure>
+          <div class="paddingart">
+
+            <div class="overskrift">
+          <h3>OM OS</h3>
+        </div>
+
+          <p class="justifyart">X Cykel Rep er et professionelt cykelværksted i Århus.
+            Klik på “Læs mere” og få mere at vide om værkstedet, 
+            og hvad vi ellers tilbyder.
+            Nemt - Hurtigt - Billigt.</p>
+            <div class="marginart1">
+            <p class="læsmereartikel">LÆS MERE</p>
+          </div>
+          </div>
+        </section></a>
+
+        <a href="foraar.html"><section class="andenartikel">
+          <figure>
+            <img class="artikel1" src="images/artikler1.jpg" alt="artikler">
+          </figure>
+          <div class="paddingart">
+
+            <div class="overskrift">
+          <h3>Gør din cykel klar til sæsonen</h3>
+        </div>
+          <p class="justifyart">Det er vigtigt at passe godt på sin cykel, derfor
+            tilbyder X Cykel Rep en forårs- og efterårs klargøring.
+            Kom forbi værkstedet, så ser vi på det!</p>
+            <div class="marginart2"> 
+              <p class="læsmereartikel">LÆS MERE</p>
+          </div>
+          </div>
+        </section></a>
+
+        <a href="404.html"><section class="tredjeartikel">
+          <figure>
+            <img class="artikel1" src="images/FAQ.jpg" alt="artikler">
+          </figure>
+          <div class="paddingart">
+            <div class="overskrift"> 
+          <h3>FAQ</h3>
+        </div>
+          <p class="justifyart">Her på siden finder du kundernes oftest stillede
+            spørgsmål. </p>
+            <div class="marginart3"> 
+              <p class="læsmereartikel">LÆS MERE</p>
+          </div>
+          </div>
+        </section></a>
+
+      </article>
     </div>
+
+          <!-- Book tid knap på telefon -->
+          <div class="booktidknap">
+            <a class="booktidknap2" href="404.html">Book tid</a>
+          </div>
  </main>
 
 
 
 
+ <!-- Footer starter Telefon -->
   <footer class="footer">
     <div class="rowsome">
         <figure class="facebook">
-            <img class="fb" src="images/fbn.png" alt="Facebook">
+            <a href="https://www.facebook.com/XCYKELREP/"><img class="fb" src="images/fbn.png" alt="Facebook"></a>
         </figure>
         <figure class="instagram">
-            <img class="ig" src="images/insta2.png" alt="Instagram">
+            <a href="https://www.instagram.com/"></a><img class="ig" src="images/insta2.png" alt="Instagram">
         </figure>
     </div>
 
     <div class="row">
 
-
-        <img class="ur" src="images/ur.png" alt="ur">
+      <a href="omos.html"><img class="ur" src="images/ur.png" alt="ur"></a>
         <div class="row1">
           <p>Man-Fre: 11.00-17.30 <br>
             Lør-Søn: Lukket</p>
         </div>
 
-        <div class="loka">
-            <a href="#"><img class="lokation" src="images/findos.png" alt="lokation"></a>
-        </div>
+        <a href="https://www.google.com/maps/place/X+Cykel+REP/@56.1496427,10.1910574,15.28z/data=!4m5!3m4!1s0x464c3ff27733a263:0xc0b9a27941280a1!8m2!3d56.1519308!4d10.1920376"><img class="lokation" src="images/findos.png" alt="lokation"></a>
         <div class="row2">
             <p> Skovgaardsgade 5C, <br>
                 8000 Aarhus C</p>
         </div>
-        <div class="pho">
-            <a href="#"><img class="phone" src="images/phone.png" alt="lokation"></a>
-        </div>
+
+           
+        <a href="tel:+4526430792"><img class="phone" src="images/phone.png" alt="lokation"></a>
         <div class="row3">
             <p>26 43 07 92</p>
         </div>
-        <div class="mobilepay">
-             <a href="#"><img class="mp" src="images/mobilepay.png" alt="lokation"></a>
-        </div>
+
+        <a href="#"><img class="mp" src="images/mobilepay.png" alt="lokation"></a>
         <div class="row4">
-            <p>Betalingsmetode</p>
+            <p class="bundfoot">Betalingsmetode</p>
         </div>
     </div>
 
+
+
+
+<!-- Footer starter Computer -->
+  <div class="row12">
+
+    
+      <div class="row5">
+        <a href="omos.html"><img class="ur1" src="images/ur.png" alt="ur"></a>
+        <p>Man-Fre: 11.00-17.30 <br>
+          Lør-Søn: Lukket</p>
+      </div>
+
+
+      <div class="row6">
+        <a href="https://www.google.com/maps/place/X+Cykel+REP/@56.1496427,10.1910574,15.28z/data=!4m5!3m4!1s0x464c3ff27733a263:0xc0b9a27941280a1!8m2!3d56.1519308!4d10.1920376"><img class="lokation1" src="images/findos.png" alt="lokation"></a>
+          <p> Skovgaardsgade 5C, <br>
+              8000 Aarhus C</p>
+      </div>
+
+         
+
+      <div class="row7">
+        <a href="tel:+4526430792"><img class="phone1" src="images/phone.png" alt="telefon"></a>
+          <p>26 43 07 92</p>
+      </div>
+
+
+      <div class="row8">
+        <a href="404.html"><img class="mp1" src="images/mobilepay.png" alt="lokation"></a>
+          <p> Betalingsmetode </p>
+      </div>
+      <div class="some12">
+        <a href="https://www.facebook.com/XCYKELREP/"><img class="fb1" src="images/fbn.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img class="ig1" src="images/insta2.png" alt="Instagram"></a>
+      </div>
+    </div>
  </footer>
-</div>
+</div> <!-- wrapper luk -->
 </body>
 </html>

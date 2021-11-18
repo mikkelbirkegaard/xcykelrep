@@ -1,0 +1,667 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
+/* Farver: genbruges og gør designvalg enkle */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --orange: #FEA808;
+  --red: #F15A24;
+  --grey: #D6D6D6;
+}
+
+/* Fonte - størrelse og design*/
+body {
+  font-family: montserrat, sans-serif;
+}
+
+
+
+h1 {
+  font-family: montserrat, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.h1com {
+  font-family: montserrat, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10%;
+}
+
+h2 {
+  font-family: montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left:5%;
+}
+
+.menupunkter {
+  font-family: montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20%;
+  width: 20ch;
+  color: var(--black);
+} 
+
+
+p {
+  font-family: montserrat,sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+
+/* Generelle indstillinger for sitet - holder på design */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}  
+
+/*HEADER START ER I EN CSS FOR SIG SELV */
+
+
+  /* Media rules for Iphone og stående ipad */
+  @media only screen and (max-width: 769px) {
+
+    .h1com {
+      display: none;
+    }
+
+    label{
+      display: block;
+      cursor: pointer;
+    }
+  
+    span{
+      display: none;
+    }
+  
+
+    .orangeformcom {
+      display: none;
+    }
+
+    .hvidformcom {
+      display: none;
+    }
+
+    .orangeform2com {
+      display: none;
+    }
+
+    .cykelhjulcom {
+      display: none;
+    }
+
+    .prisercom {
+      display: none !important;
+    }
+
+    .udregnecom {
+      display: none;
+    }
+
+    .containercom {
+      display: none;
+    }
+ 
+    footer::before{
+      background: url("../images/sidstegang.svg") center bottom no-repeat;
+      bottom: 100%;
+      content: '';
+      height: 300px;
+      position: absolute;
+      width: 100%;
+    }
+
+    .row12{
+      display: none !important;
+    }
+
+    .udregne {
+      margin-top: -28%;
+      }
+
+    .container {
+      margin-top: -30%;
+      margin-bottom: 40%;
+      }
+
+      .udregn {
+        margin: 80px -35px;
+        margin-bottom: 20%;
+        }
+      }  
+
+  /* Media rules for liggende ipad og web */
+  @media only screen and (min-width: 770px) {
+    .h1tel {
+      display: none;
+    }
+
+    .row{
+      display: none!important;
+    }
+    .rowsome{
+      display: none!important;
+    }
+
+  /* Nav bar */
+    #findus{
+      display: none;
+    }
+
+  /* Indhold fra telefon fjernet*/
+  .cykelhjul{
+    display: none;
+  }
+
+  .hvid {
+    display: none;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .penge {
+    display: none;
+  }
+
+  .orangeform {
+    display: none;
+  }
+
+  .tekst1 {
+    display: none;
+  }
+
+  .tekst2 {
+    display: none;
+  }
+  
+  .priser {
+    display: none;
+  }
+
+  .pr {
+    display: none;
+  }
+
+.booktidknap {
+  display: none;
+}
+
+footer::before{
+  background: url("../images/footer.svg") center bottom no-repeat;
+  bottom: 100%;
+  content: '';
+  height: 200px;
+  position: absolute;
+  width: 100%;
+}
+}
+
+@media only screen and (min-width: 1025px){
+  .row1{
+    margin-bottom: 30px;
+  }
+  .ur{
+    margin-bottom: 90px;
+  }
+}
+
+
+/* Indhold START Computer */
+  .formecom {
+    width: 100%;
+    height: auto;
+  }
+
+  .orangeformcom {
+    margin-bottom: 50px;
+  }
+  .orangeform {
+    position: absolute;
+    width: 80%;
+    right: 0;
+    z-index: -10;
+  }
+
+  .hvidformcom {
+    position: absolute;
+    width: 90%;
+    right: 0;
+    z-index: 0;
+    margin-top: -45%;
+    margin-left: 10%;
+  } 
+
+  .orangeform2com {
+    position: absolute;
+    width: 32%;
+    right: 0;
+    z-index: -10;
+    margin-top: -50%;
+  }
+
+  .cykelhjulcom {
+    position: absolute;
+    right: 0;
+    height: auto;
+    z-index: -8;
+    margin-top: -44%;
+  }
+
+  .prisercom {
+    display: flex;
+    position: relative;
+    margin-bottom: 150px;
+  }
+
+  .udregnecom {
+    margin-bottom: 150px;
+  }
+
+  .pristekst {
+    position: relative;
+    width: 50%;
+    padding-left: 10%;
+    z-index: 1;
+    margin-top: -45%;
+  }
+
+  .priser1com {
+    position: absolute;
+    width: 50%;
+    padding-left: 15%;
+    height: auto;
+    z-index: 2;
+    margin-top: -10%;
+    columns: 2;
+    margin-top: -40%;
+  }
+
+
+  .tekst2com {
+    position: absolute;
+    width: 80%;
+    padding-left: 55%;
+    height: auto;
+    z-index: 3;
+    margin-top: -55%;
+    width: 100ch;
+  }
+
+  .containercom {
+    position: absolute;
+    width: 90%;
+    padding-left: 60%;
+    height: auto;
+    z-index: 2;
+    margin-top: -49%;
+  }
+
+  .clearfix {
+    float: left;
+    width: 100%;
+  }
+
+
+/* INDHOLD START telefon */
+.pris {
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.priser {
+  column-count: 2;
+  grid-row-start: auto;
+  padding: 10%;
+  width: 100%;
+}
+
+.pr {
+  float: right;
+  margin-bottom: 90%;
+}
+
+.section {
+  display: flex;
+}
+
+.article {
+  padding: 0 2em;
+}
+
+.cykelhjul {
+  position: absolute;
+  width: 40%;
+  z-index: -10;
+}
+
+.tekst1 {
+  padding: 5%;
+  position: relative;
+  z-index: -10;
+}
+.tekst2 {
+  padding: 5%;
+  margin-top: 60%;
+}
+
+.orangeform {
+  position: absolute;
+  width: 80%;
+  right: 0;
+  padding-top: -90%;
+  z-index: -10;
+}
+
+.penge {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  height: auto;
+  z-index: -8;
+  margin-top: 180%;
+}
+
+.udregne{
+  width: auto;
+  height: auto;
+  position: relative;
+  top:0;
+  left:0;
+}
+
+
+.hvid {
+  width: 100%;
+  height: 30%;
+}
+
+.hvidform {
+  position: absolute;
+  width: 90%;
+  right: 0;
+  height: auto;
+  z-index: -10;
+  margin-top: -120%;
+}
+
+.menupunkter {
+  padding: 5%;
+  font-weight: 200;
+}
+
+/* Book tid knap på telefon*/
+.booktidknap {
+  position: fixed;
+  background: #F15A24;
+  width: 90%;
+  left: 5%;
+  height: 45px;
+  line-height: 45px;
+  bottom: 10%;
+  text-align: center;
+  box-shadow: 4px 4px 4px var(--grey);
+  cursor: pointer;
+  border-radius: 50px;
+  z-index: 10;
+  text-transform: uppercase;
+  font-family: montserrat, sans-serif;
+  font-weight: 900;
+  color: var(--black);
+  text-decoration: none;
+}
+.booktidknap2 {
+  text-decoration: none;
+  font-family: montserrat, sans-serif;
+  font-weight: 200;
+  color: var(--black);
+}
+
+.booktidknap:active {
+box-shadow: 0 0;
+}
+
+/* Knapper til reparation*/
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  background: #f1f1f1;
+  border-radius: 50px;
+  border: 20px;
+  border: 1px solid #FEA808;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Indstillinger for udregn knap */
+button {
+  background-color: var(--red);
+  color: var(--black);
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+  border-radius: 50px;
+  
+}
+
+.udregn:hover {
+background-color: #FEA808;
+transition: all 1s ease;
+}
+
+
+/* Float af udregn knap and add an equal width */
+.udregn {
+  float: right;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 10%;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+/* FOOTER START*/
+.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul{
+  list-style: none;
+}
+
+footer{
+  position: relative;
+  margin-top: auto;
+  background-color: #FEA808;
+  margin-top: auto;
+  width: 100%;
+}
+.rowsome{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.bundfoot{
+  margin-bottom: 200px;
+}
+
+.fb{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.ig{
+    width: 40px;
+    margin-left: 10px;
+}
+
+
+.ur{
+    width: 20px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.row1{
+    margin: auto;
+    text-align: center;
+}
+
+.lokation{
+    width: 20px;
+    padding-top: 30px;
+}
+
+.loka{
+    margin: auto;
+}
+
+.phone{
+    width: 20px;
+    padding-top: 30px;
+}
+
+.pho{
+    margin: auto;
+}
+
+.mp{
+    width: 20px;
+    padding-top: 30px;
+}
+
+.mobilepay{
+    margin: auto;
+}
+
+.row2{
+    text-align: center;
+    margin: auto;
+}
+
+.row3{
+    text-align: center;
+    margin: auto;
+}
+
+.row4{
+    text-align: center;
+    margin: auto;
+}
+
+.pp{
+  width: 100%;
+  height: 500px;
+}
+
+.row12{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.fb1{
+  width: 50px;
+  margin-right: 10px;
+}
+
+.ig1{
+  width: 40px;
+  margin-left: 10px;
+}
+
+
+
+.ur1{
+  width: 30px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+}
+
+.some12{
+  margin: auto;
+  text-align: center;
+}
+
+.row5{
+  margin: auto;
+  text-align: center;
+}
+
+.lokation1{
+  width: 23px;
+  padding-top: 20px;
+}
+
+
+.phone1{
+  width: 30px;
+}
+
+
+.mp1{
+  width: 30px;
+}
+
+.mobilepay1{
+  margin: auto;
+}
+
+.row6{
+  text-align: center;
+  margin: auto;
+}
+
+.row7{
+  text-align: center;
+  margin: auto;
+}
+
+.row8{
+  text-align: center;
+  margin: auto;
+}
+/*Footer slut*/

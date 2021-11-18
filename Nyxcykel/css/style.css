@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'montserrat';
+
+}
+p{
+  font-size: 20px;
+  font-family: 'montserrat';
+  font-weight: 200;
+}
+
+h3{
+  font-size: 20px;
+  font-family: 'montserrat';
+  font-weight: 500;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0px 2%;
+  background-color: white;
+  box-shadow: 0px 20px 40px;
+  color: #D6D6D6;
+  position: relative;
+  z-index: 10;
+}
+
+.logo{
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+.navlist{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+}
+
+.navlist li{
+  display: inline-block;
+  padding:  0px 20px;
+}
+
+.navlist li a{
+  transition: 0.1s;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+.navlist li a:hover{
+  color: #F15A24;
+}
+
+
+.buttom{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 9px 25px;
+  background-color: #F15A24;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+
+}
+
+.buttom:hover{
+  color: #F15A24;
+}
+
+.knap:hover {
+  background-color: #FEA808;
+  transition: all 1s ease;
+}
+
+.sidelist{
+  text-decoration: none;
+}
+
+.sidelist li{
+  display: inline-block;
+  padding:  0px 10px;
+}
+.sidelist li a{
+  transition: all 0,4s ease 0s;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+.sidelist li a:hover{
+  color: #f4a83c;
+}
+.kurv{
+  width: 30px;
+}
+.findos{
+  width: 20px
+}
+.burger{
+  text-decoration: none;
+}
+.burg{
+  text-decoration: none;
+  list-style: none;
+  color: #F15A24;
+  font-size: 60px;
+}
+.nyny{
+  position: relative;
+}
+
+
+
+@media only screen and (max-width: 769px){
+  nav{
+    display: none;
+  }
+  .læsmere1{
+    margin-top: 100px;
+    font-weight: 500;
+  }
+  .billedertilmain{
+    height: 100vh;
+  }
+  .rasmus{
+    position: absolute;
+    top: 210px;
+    left: -30px;
+    width: 55%;
+    max-width: 400px;
+  }
+  .rasmusbaggrund{
+    position: absolute;
+    top: 180px;
+    left: 0;
+    width: 70%;
+  }
+
+  .nyny{
+    display: none;
+  }
+
+  .sidelist{
+    display: none;
+  }
+
+  header{
+    justify-content: space-between;
+  }
+
+  footer::before{
+    background: url("../images/sidstegang.svg") center bottom no-repeat;
+    bottom: 100%;
+    content: '';
+    height: 600px;
+    position: absolute;
+    width: 100%;
+}
+
+
+.rasmusbaggrundhvid{
+  position: absolute;
+  top: 180px;
+  left: 60px;
+  width: 100%;
+}
+
+.pp{
+  position: absolute;
+  top: 270px;
+  left: 200px;
+  font-size: 20px;
+  font-weight: 400;
+
+}
+.kk{
+  position: absolute;
+  top: 300px;
+  left: 170px;
+  font-size: 20px;
+  font-weight: 200;
+  width: 15ch;
+  text-align: center;
+}
+.row12{
+  display: none!important;
+}
+.treartikler{
+  display: none!important;
+}
+}
+
+ @media only screen and (min-width: 770px) {
+   .burger{
+     display: none;
+   }
+   .findos{
+     display: none;
+   }
+
+   footer::before{
+    background: url("../images/footer.svg") center bottom no-repeat;
+    bottom: 100%;
+    content: '';
+    height: 200px;
+    position: absolute;
+    width: 100%;
+}
+.rasmus{
+  position: absolute;
+  top: 600px;
+  left: -30px;
+  width: 200px;
+  max-width: 400px;
+}
+.rasmusbaggrund{
+  position: absolute;
+  top: 600px;
+  left: 0;
+  width: 300px;
+}
+.rasmusbaggrundhvid{
+  position: absolute;
+  top: 600px;
+  left: 70px;
+  width: 400px;
+}
+
+.kunderne{
+  display: none;
+}
+.row{
+  display: none!important;
+}
+.rowsome{
+  display: none!important;
+}
+
+ }
+ @media only screen and (min-width: 666px) {
+
+   .pp{
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    font-size: 30px;
+    font-weight: 400;
+ 
+  }
+  .kk{
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    font-size: 20px;
+    font-weight: 200;
+    width: 15ch;
+    text-align: center;
+  }
+
+
+
+ }
+ @media only screen and (min-width: 770px){
+  .pp{
+    position: absolute;
+    top: 750px;
+    left: 190px;
+    font-size: 20px;
+    font-weight: 400;
+  
+  }
+  .kk{
+    position: absolute;
+    top: 800px;
+    left: 170px;
+    font-size: 20px;
+    font-weight: 200;
+    width: 19ch;
+    text-align: center;
+  }
+  .læsmere{
+    position: absolute;
+    top: 1090px;
+    left: 340px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .læsmere1{
+    display: none;
+  }
+  .rasmusbaggrund{
+    position: absolute;
+    top: 550px;
+    left: 0;
+    width: 350px;
+  }
+  .rasmusbaggrundhvid{
+    position: absolute;
+    top: 600px;
+    left: 70px;
+    width: 400px;
+  }
+  .rasmus{
+    position: absolute;
+    top: 700px;
+    left: -30px;
+    width: 200px;
+    max-width: 400px;
+  }
+ 
+  .booktidknap {
+    display: none;
+  }
+
+
+ }
+ @media only screen and (min-width: 1025px){
+  .pp{
+    position: absolute;
+    top: 1000px;
+    left: 400px;
+    font-size: 20px;
+    font-weight: 400;
+  
+  }
+  .kk{
+    position: absolute;
+    top: 1050px;
+    left: 370px;
+    font-size: 20px;
+    font-weight: 200;
+    width: 19ch;
+    text-align: center;
+  }
+  .læsmere{
+    position: absolute;
+    top: 1340px;
+    left: 550px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .læsmere1{
+    display: none;
+  }
+  .rasmusbaggrund{
+    position: absolute;
+    top: 800px;
+    left: 0;
+    width: 600px;
+  }
+  .rasmusbaggrundhvid{
+    position: absolute;
+    top: 800px;
+    left: 70px;
+    width: 700px;
+  }
+  .rasmus{
+    position: absolute;
+    top: 900px;
+    left: -30px;
+    width: 300px;
+    max-width: 100%;
+  }
+
+
+
+
+}
+.row1{
+  margin-bottom: 30px;
+}
+.ur{
+  margin-bottom: 90px;
+}
+
+
+
+
+.billedertilmain{
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+}
+
+
+
+  .pp1{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .pilvenstre{
+      width: 100%;
+      width: 5%;
+      height: 5%;
+      justify-content: center;
+      padding-left: 10px;
+  }
+  .pilh{
+    width: 100%;
+    width: 5%;
+    height: 5%;
+    justify-content: center;
+    padding-right: 10px;
+}
+.parent1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50%;
+}
+
+.rew{
+    width: 50%;
+}
+.pp1h{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 60px;
+
+}
+.rew1{
+  padding-top: 100px;
+  width: 250px;
+}
+.rew2{
+  width: 250px;
+  padding-top: 50px;
+}
+.rew3{
+  width: 250px;
+  padding-top: 50px;
+}
+
+.parent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+.kunderne{
+    position: relative;
+    background-color: white;
+    height: 100%;
+}
+.læsmere{
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #FEA808;
+  color: black;
+}
+.læsmere1{
+  position: absolute;
+  top: 600px;
+  left: 200px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #FEA808;
+  color: black;
+}
+
+
+/* Book tid knap på telefon*/
+.booktidknap {
+  position: fixed;
+  background: #F15A24;
+  width: 90%;
+  left: 5%;
+  height: 45px;
+  line-height: 45px;
+  bottom: 10%;
+  text-align: center;
+  box-shadow: 4px 4px 4px #D6D6D6;
+  cursor: pointer;
+  border-radius: 50px;
+  z-index: 10;
+  text-transform: uppercase;
+  font-family: montserrat, sans-serif;
+  font-weight: 900;
+  color: var(--black);
+  text-decoration: none;
+}
+.booktidknap2 {
+  text-decoration: none;
+  font-family: montserrat, sans-serif;
+  font-weight: 200;
+  color: var(--black);
+}
+
+.booktidknap:active {
+box-shadow: 0 0;
+}
+
+/* Footer start*/
+.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul{
+  list-style: none;
+}
+
+footer{
+  position: relative;
+  margin-top: auto;
+  background-color: #FEA808;
+  margin-top: auto;
+  width: 100%;
+}
+
+.rowsome{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.bundfoot{
+  margin-bottom: 200px;
+}
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+
+  }
+
+
+
+.fb{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.ig{
+    width: 40px;
+    margin-left: 10px;
+}
+
+
+
+.ur{
+    width: 20px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.row1{
+    margin: auto;
+    text-align: center;
+}
+
+.lokation{
+    width: 20px;
+    padding-top: 30px;
+}
+
+.loka{
+    margin: auto;
+}
+
+.phone{
+    width: 20px;
+    padding-top: 30px;
+}
+
+.pho{
+    margin: auto;
+}
+
+.mp{
+    width: 20px;
+    padding-top: 30px;
+}
+
+.mobilepay{
+    margin: auto;
+}
+
+.row2{
+    text-align: center;
+    margin: auto;
+}
+
+.row3{
+    text-align: center;
+    margin: auto;
+}
+
+.row4{
+    text-align: center;
+    margin: auto;
+}
+
+.pp{
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
+
+.row12{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.fb1{
+  width: 50px;
+  margin-right: 10px;
+}
+
+.ig1{
+  width: 40px;
+  margin-left: 10px;
+}
+
+
+
+.ur1{
+  width: 30px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+}
+
+.some12{
+  margin: auto;
+  text-align: center;
+}
+.row5{
+  margin: auto;
+  text-align: center;
+}
+
+.lokation1{
+  width: 23px;
+  padding-top: 20px;
+}
+
+
+
+.phone1{
+  width: 30px;
+}
+
+
+.mp1{
+  width: 30px;
+}
+
+.mobilepay1{
+  margin: auto;
+}
+
+.row6{
+  text-align: center;
+  margin: auto;
+}
+
+.row7{
+  text-align: center;
+  margin: auto;
+}
+
+.row8{
+  text-align: center;
+  margin: auto;
+}
+
+
+/*tre artikler i bunden af forsiden*/
+
+.treartikler{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  margin-right:33px;
+}
+.førsteartikel{
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 700px;
+  border-radius: 25px;
+
+}
+.førsteartikel:hover{
+  transition-timing-function: ease-in-out;
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px;
+  color: rgb(87, 87, 87);
+}
+.artikel1{
+  width: 300px;
+}
+.andenartikel{
+  background-color: rgb(255, 255, 255);;
+  width: 300px;
+  height: 700px;
+  border-radius: 25px;
+}
+.andenartikel:hover{
+  transition-timing-function: ease-in-out;
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px;
+  color: rgb(87, 87, 87);
+}
+.tredjeartikel{
+  background-color: rgb(255, 255, 255);;
+  width: 300px;
+  height: 700px;
+  border-radius: 25px;
+}
+.tredjeartikel:hover{
+  transition-timing-function: ease-in-out;
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px;
+  color: rgb(87, 87, 87);
+}
+.læsmereartikel{
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #FEA808;
+  color: black;
+}
+.paddingart{
+  padding: 20px 20px 20px 20px;
+}
+.marginart1{
+  margin-top: 43px;
+}
+.marginart2{
+  margin-top: 20px;
+}
+.marginart3{
+  margin-top: 138px;
+}
+.justifyart{
+  width: 20ch;
+
+}
+
+.overskrift{
+  margin-bottom: 20px;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
