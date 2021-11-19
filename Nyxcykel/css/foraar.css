@@ -18,7 +18,10 @@ body{
 main{
   height: 130vh;
 }
-
+a{
+  text-decoration: none;
+  color: black;
+}
 p {
   font-family: montserrat, sans-serif;
   font-size: 20px;

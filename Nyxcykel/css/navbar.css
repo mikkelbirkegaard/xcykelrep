@@ -7,6 +7,11 @@
 html{
   font-family: 'montserrat';
 }
+.basket{
+  width: 40px;
+  height: auto;
+}
+
 
 .nav{
   text-align: right;
@@ -58,6 +63,7 @@ span{
 
 .logo{
   width: 100px;
+  height: auto;
   cursor: pointer;
 }
 
@@ -135,6 +141,10 @@ header{
 
   .menu a{
     display: block;
+    border-bottom: 1px solid #CECCCC;
+    margin: 0;
+  }
+  .sason{
     border-bottom: 1px solid #CECCCC;
     margin: 0;
   }

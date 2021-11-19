@@ -113,9 +113,11 @@ header{
 }
 .kurv{
   width: 30px;
+  height: auto; 
 }
 .findos{
-  width: 20px
+  width: 20px;
+  height: auto; 
 }
 .burger{
   text-decoration: none;
@@ -136,9 +138,21 @@ header{
   nav{
     display: none;
   }
-  .læsmere1{
+  .lasmere1{
     margin-top: 100px;
     font-weight: 500;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .lasmere1:hover{
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px;
+    color: rgb(189, 189, 189);
+  }
+
+  .lasmere{
+    display: none;
   }
   .billedertilmain{
     height: 100vh;
@@ -299,15 +313,22 @@ header{
     width: 19ch;
     text-align: center;
   }
-  .læsmere{
+  .lasmere{
     position: absolute;
     top: 1090px;
     left: 340px;
     font-size: 20px;
     font-weight: 400;
-    text-align: center;
+    cursor: pointer;
+    z-index: 100;
   }
-  .læsmere1{
+  .lasmere:hover{
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px;
+    color: rgb(189, 189, 189);
+  }
+  .lasmere1{
     display: none;
   }
   .rasmusbaggrund{
@@ -354,7 +375,7 @@ header{
     width: 19ch;
     text-align: center;
   }
-  .læsmere{
+  .lasmere{
     position: absolute;
     top: 1340px;
     left: 550px;
@@ -362,7 +383,7 @@ header{
     font-weight: 400;
     text-align: center;
   }
-  .læsmere1{
+  .lasmere1{
     display: none;
   }
   .rasmusbaggrund{
@@ -451,13 +472,16 @@ header{
 .rew1{
   padding-top: 100px;
   width: 250px;
+  height: auto;
 }
 .rew2{
   width: 250px;
+  height: auto;
   padding-top: 50px;
 }
 .rew3{
   width: 250px;
+  height: auto;
   padding-top: 50px;
 }
 
@@ -476,14 +500,14 @@ header{
     background-color: white;
     height: 100%;
 }
-.læsmere{
+.lasmere{
   text-decoration: none;
   padding: 5px;
   border-radius: 10px;
   background-color: #FEA808;
   color: black;
 }
-.læsmere1{
+.lasmere1{
   position: absolute;
   top: 600px;
   left: 200px;
@@ -654,11 +678,13 @@ footer{
 .fb1{
   width: 50px;
   margin-right: 10px;
+  height: auto; 
 }
 
 .ig1{
   width: 40px;
   margin-left: 10px;
+  height: auto; 
 }
 
 
@@ -667,6 +693,7 @@ footer{
   width: 30px;
   padding-top: 20px;
   padding-bottom: 7px;
+  height: auto; 
 }
 
 .some12{
@@ -681,17 +708,20 @@ footer{
 .lokation1{
   width: 23px;
   padding-top: 20px;
+  height: auto; 
 }
 
 
 
 .phone1{
   width: 30px;
+  height: auto; 
 }
 
 
 .mp1{
   width: 30px;
+  height: auto; 
 }
 
 .mobilepay1{
@@ -739,6 +769,11 @@ footer{
 }
 .artikel1{
   width: 300px;
+  height: auto;
+}
+.artikel1:hover{
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
 }
 .andenartikel{
   background-color: rgb(255, 255, 255);;
